@@ -12,11 +12,6 @@ function proxyTo (port, ws = false) {
 
 const app = express()
 
-// app.use('/app*', proxyTo('10100'))
-// app.use('/signup*', proxyTo('10700', true))
-// app.use('/extension/leadiq-background.js', proxyTo('10600'))
-// app.use('/health', (req, res) => res.send('version 1.0.0'))
-// app.use('/', redirects)
 app.use('/', proxyTo('3000'))
 
 
@@ -25,8 +20,9 @@ const options = {
     externalResolver: true,
     bodyParser: false,
 },
-  key: fs.readFileSync('./certs/dev.johnboxcodes.com-key.pem'),
-  cert: fs.readFileSync('./certs/dev.johnboxcodes.com.pem')
+// uses a self signed certificate for the domain
+  key: fs.readFileSync('./certs/mycert.com-key.pem'),
+  cert: fs.readFileSync('./certs/my-cert.com.pem')
 }
 
 https.createServer(options, app).listen(443, '127.0.0.1')
