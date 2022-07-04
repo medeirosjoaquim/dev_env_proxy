@@ -5,7 +5,7 @@
 
 ## What you'll need:
 
-- To redirect a domain to your local-only interface (127.0.0.1). We can do it by editing your hosts file on any system or adding an "A + Dynamic DNS Record" to your domain DNS. In each case you'll have something like "dev.mydomain.com" that redirects to 127.0.0.1.
+- To redirect a domain to your local-only interface (127.0.0.1). We can do it by editing hosts file on any system or adding an "A + Dynamic DNS Record" to your domain DNS. In each case you'll have something like "dev.mydomain.com" that redirects to 127.0.0.1.
 
 - In order to use HTTPS/port 443 We need: 
 A self signed certificate, I used mkcert: https://github.com/FiloSottile/mkcert#installation
