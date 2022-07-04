@@ -14,8 +14,10 @@ Follow the instructions (the mkcert install to register it in the system) and th
 
 e.g:
 
-```mkcert -install
-mkcert dev.mysite.com```
+```
+mkcert -install
+mkcert dev.mysite.com
+```
 
 Copy the files to dev-proxy "certs" folder and edit proxy.js to match the filenames.
 
