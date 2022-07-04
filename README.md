@@ -1,7 +1,7 @@
-# Dev proxy for local development
+## Dev proxy for local development
 
 
-# This allows you to use a domain as your dev URL instead of just localhost.
+### This allows you to use a domain as your dev URL instead of just localhost.
 
 ## What you'll need:
 
