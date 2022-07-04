@@ -21,7 +21,7 @@ mkcert dev.mysite.com
 
 Copy the files to dev-proxy "certs" folder and edit proxy.js to match the filenames.
 
-After this. Install the packages on both repositories with npm install.
+After this. Install the packages on both repositories with ```yarn``` or ```npm install```.
 
 Run the proxy with ```npm run serve```
 
