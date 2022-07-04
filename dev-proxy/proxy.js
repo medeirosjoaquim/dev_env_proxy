@@ -21,8 +21,8 @@ const options = {
     bodyParser: false,
 },
 // uses a self signed certificate for the domain
-  key: fs.readFileSync('./certs/mycert.com-key.pem'),
-  cert: fs.readFileSync('./certs/my-cert.com.pem')
+  key: fs.readFileSync('./certs/mysite.com-key.pem'),
+  cert: fs.readFileSync('./certs/mysite.com.pem')
 }
 
 https.createServer(options, app).listen(443, '127.0.0.1')
